@@ -8,6 +8,7 @@ import OrganigramaPage from './pages/OrganigramaPage';
 import LoginPage from './pages/LoginPage';
 import AdminPage from './pages/AdminPage';
 import NotFoundPage from './components/NotFoundPage';
+import ContentPage from './pages/ContentPage';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/organigrama" element={<OrganigramaPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/manage" element={<AdminPage />} />
+            <Route path="/manage/content" element={<ContentPage />} />
             <Route path="*" element={<NotFoundPage/>} />
           </Routes>
         </main>
