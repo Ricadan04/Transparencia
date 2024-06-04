@@ -7,8 +7,10 @@ import NominasPage from './pages/NominasPage';
 import OrganigramaPage from './pages/OrganigramaPage';
 import LoginPage from './pages/LoginPage';
 import AdminPage from './pages/AdminPage';
-import NotFoundPage from './components/NotFoundPage';
+import NotFoundPage from './pages/NotFoundPage';
 import ContentPage from './pages/ContentPage';
+import DepartmentPage from './pages/DepartmentPage';
+import EmployeePage from './pages/EmployeePage';
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/manage" element={<AdminPage />} />
             <Route path="/manage/content" element={<ContentPage />} />
+            <Route path="/manage/department" element={<DepartmentPage />} />
+            <Route path="/manage/employee" element={<EmployeePage />} />
             <Route path="*" element={<NotFoundPage/>} />
           </Routes>
         </main>

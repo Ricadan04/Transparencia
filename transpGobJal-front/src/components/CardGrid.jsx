@@ -18,7 +18,9 @@ const CardGrid = ({ menu }) => {
     switch (menu) {
         case 'admin':
            cards = [
-              { title: 'Gestión de Usuarios', description: 'Administra los usuarios del sitio.', onClick: () => navigate('/admin/users') },
+              { title: 'Gestión de Usuarios', description: 'Gestiona los usuarios administrativos del sitio.', onClick: () => navigate('/admin/users') },
+              { title: 'Gestión de Direcciones', description: 'Administra las direcciones existentes.', onClick: () => navigate('/manage/department') },
+              { title: 'Gestión de Personal', description: 'Administra el personal de PLAi.', onClick: () => navigate('/manage/employee') },
               { title: 'Gestión de Contenidos', description: 'Administra el contenido del sitio.', onClick: () => navigate('/manage/content') },
               // Otras opciones de administración
             ];
@@ -37,9 +39,6 @@ const CardGrid = ({ menu }) => {
           cards = [
             { title: 'Nóminas', description: 'Gestionar registro de nóminas de PLAi.', onClick: () => navigate('/nominassubir') },
             { title: 'Organigrama', description: 'Gestionar organigrama y personal de PLAi.', onClick: () => navigate('/organigramasubir') },
-            { title: 'Contratos', description: 'Gestionar registro de nóminas de PLAi.', onClick: () => navigate('/') },
-            { title: 'Adjudicaciones directas', description: 'Mas funciones podrán incorporarse al sistema.', onClick: () => navigate('/') },
-            { title: 'Licitaciones', description: 'Mas funciones podrán incorporarse al sistema.', onClick: () => navigate('/') },
             // Agrega más tarjetas aquí
           ];
           break;

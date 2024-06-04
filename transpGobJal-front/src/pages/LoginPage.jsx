@@ -1,10 +1,10 @@
 import React from 'react';
-
+ 
 const LoginPage = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-300">
+    <div className="flex items-center justify-center min-h-full bg-gray-300">
       <div className="max-w-md w-full bg-white p-6 shadow-md rounded-md">
-        <div className="text-center mb-6">
+        <div className="text-center mb-4">
           <img src="/plai.svg" alt="Logo" className="mx-auto h-16" />
         </div>
         <p className="text-sm text-gray-600 m-6" >Este sitio requiere credenciales administrativas para Ingresar</p>
